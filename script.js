@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
     pulse: {
       category: '01 // TELEMETRY & EDGE MONITORING',
       title: 'Pulse Analytics Engine',
-      image: 'assets/images/project-1.svg',
+      image: 'project-1.svg',
       description: 'A high-throughput monitoring dashboard engineered to visualize real-time edge network telemetry. Rendered with zero framework dependencies using hardware-accelerated canvas charts and vanilla event pipelines for maximal responsiveness.',
       highlights: [
         'Sub-10ms UI update cycle for streaming time-series data visualization',
@@ -369,7 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
     kuro: {
       category: '02 // COMMERCE & DIGITAL ATELIER',
       title: 'Kuro Atelier',
-      image: 'assets/images/project-2.svg',
+      image: 'project-2.svg',
       description: 'A brutalist, minimalist e-commerce storefront designed for an independent industrial design practice. Engineered to accentuate tactile imagery and craftsmanship through intentional whitespace, fluid typography, and micro-interactions.',
       highlights: [
         'Perfect 100/100 Core Web Vitals score across mobile and desktop audits',
@@ -383,7 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
     verve: {
       category: '03 // EDITORIAL & CREATIVE LAB',
       title: 'Verve Studio Engine',
-      image: 'assets/images/project-3.svg',
+      image: 'project-3.svg',
       description: 'A modular editorial publishing system engineered for creative studios and independent practitioners. Leverages CSS clamp() mathematical typography systems and native intersection observers for graceful pacing and storytelling.',
       highlights: [
         'Zero external CSS dependencies or JavaScript animation libraries',
@@ -397,7 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
     synthetix: {
       category: '04 // TOOLING & DESIGN SYSTEMS',
       title: 'Synthetix Design Tokens',
-      image: 'assets/images/project-4.svg',
+      image: 'project-4.svg',
       description: 'An in-browser design token compiler and component workbench. Enables engineering teams to configure, inspect, and export tokenized monochrome palettes, typographic scales, and CSS variables in real time.',
       highlights: [
         'Live syntax-highlighted token JSON parsing without external parser packages',
