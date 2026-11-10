@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Ayoub Zouggar — SHADOW GARDEN | Independent Web Developer</title>
+  <meta name="title" content="Ayoub Zouggar — SHADOW GARDEN | Independent Web Developer">
+  <meta name="description" content="Portfolio of Ayoub Zouggar (SHADOW GARDEN). Independent Web Developer based in Tangier, Morocco. Crafting modern, high-performance web experiences with HTML5, CSS3, and Vanilla JavaScript.">
+  <meta name="keywords" content="Ayoub Zouggar, SHADOW GARDEN, Independent Web Developer, Tangier Morocco, Web Developer Portfolio, Vanilla JavaScript, HTML5, CSS3, Minimalist Web Design, Dark Monochrome Portfolio">
+  <meta name="author" content="Ayoub Zouggar">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#080808">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SHADOW GARDEN — Ayoub Zouggar">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Ayoub Zouggar — SHADOW GARDEN | Independent Web Developer">
+  <meta property="og:description" content="Independent Web Developer based in Tangier, Morocco. Crafting modern, high-performance web experiences with HTML5, CSS3, and Vanilla JavaScript.">
+  <meta property="og:image" content="assets/images/project-1.svg">
+
+  <!-- Twitter / X -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Ayoub Zouggar — SHADOW GARDEN | Independent Web Developer">
+  <meta property="twitter:description" content="Independent Web Developer based in Tangier, Morocco. Crafting modern, high-performance web experiences with HTML5, CSS3, and Vanilla JavaScript.">
+  <meta property="twitter:image" content="assets/images/project-1.svg">
+  <meta name="twitter:image:alt" content="SHADOW GARDEN Portfolio Preview - Ayoub Zouggar">
+
+  <!-- Preconnect to Google Fonts for Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Favicon Monogram (SVG Data URI with SG Mark) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23080808'/><rect x='1' y='1' width='30' height='30' rx='5' fill='none' stroke='%23333333' stroke-width='1'/><text x='16' y='21' fill='%23FFFFFF' font-family='sans-serif' font-weight='800' font-size='12' text-anchor='middle' letter-spacing='1'>SG</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data (JSON-LD) for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ayoub Zouggar",
+    "alternateName": "SHADOW GARDEN",
+    "jobTitle": "Independent Web Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tangier",
+      "addressCountry": "Morocco"
+    },
+    "telephone": "+212714413740",
+    "knowsAbout": [
+      "HTML5",
+      "CSS3",
+      "Vanilla JavaScript",
+      "Responsive Web Design",
+      "Modern CSS Architecture",
+      "Web Performance",
+      "Dark Monochrome UI Design"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================================
+       CINEMATIC PAGE INTRO LOADER
+       ======================================================================== -->
+  <div id="intro-loader" class="intro-loader" aria-hidden="true">
+    <div class="intro-loader__inner">
+      <div class="intro-loader__mark-wrap">
+        <div class="intro-loader__symbol">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="44" height="44" rx="8" stroke="#333333" stroke-width="1.5"/>
+            <path d="M14 24H34M24 14V34" stroke="#555555" stroke-width="1" stroke-dasharray="2 2"/>
+            <text x="24" y="30" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="700" font-size="16" text-anchor="middle" letter-spacing="1">SG</text>
+          </svg>
+        </div>
+      </div>
+      <div class="intro-loader__title-wrap">
+        <span class="intro-loader__eyebrow">DIGITAL STUDIO ARCHIVE</span>
+        <h2 class="intro-loader__brand">SHADOW GARDEN</h2>
+        <p class="intro-loader__author">AYOUB ZOUGGAR // TANGIER, MOROCCO</p>
+      </div>
+      <div class="intro-loader__progress-bar">
+        <div class="intro-loader__progress-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ambient Background Elements: Film Grain & Moving Spotlight -->
+  <div class="bg-noise" aria-hidden="true"></div>
+  <div class="bg-spotlight" id="bg-spotlight" aria-hidden="true"></div>
+
+  <!-- Custom Cursor Elements (Desktop Pointer Only) -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       1. NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <!-- Personal Brand Logo -->
+      <a href="#hero" class="brand" aria-label="SHADOW GARDEN — Ayoub Zouggar Portfolio Homepage">
+        <span class="brand__mark" aria-hidden="true">SG</span>
+        <span class="brand__name">SHADOW GARDEN</span>
+        <span class="brand__role">/ AYOUB ZOUGGAR</span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Work</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action & Mobile Toggle Button -->
+      <div class="header-actions">
+        <a href="https://wa.me/212714413740" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--sm" aria-label="Chat on WhatsApp with Ayoub Zouggar (opens in a new tab)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+        <button type="button" class="nav-toggle-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div id="mobile-nav" class="mobile-nav" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Mobile Navigation Menu">
+    <div class="mobile-nav__header">
+      <span class="brand__name">SHADOW GARDEN</span>
+      <button type="button" class="mobile-nav__close-btn" aria-label="Close navigation menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav__list" role="navigation" aria-label="Mobile Navigation Links">
+      <a href="#about" class="mobile-nav__link">About</a>
+      <a href="#skills" class="mobile-nav__link">Skills &amp; Technologies</a>
+      <a href="#projects" class="mobile-nav__link">Selected Work</a>
+      <a href="#services" class="mobile-nav__link">Services</a>
+      <a href="#contact" class="mobile-nav__link">Contact</a>
+    </nav>
+    <div class="mobile-nav__footer">
+      <div class="status-badge">
+        <span class="status-badge__dot" aria-hidden="true"></span>
+        <span>Available for web development projects</span>
+      </div>
+      <a href="https://wa.me/212714413740" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="width: 100%;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        WhatsApp: +212 714-413740
+      </a>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MAIN CONTENT
+       ======================================================================== -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- ======================================================================
+         2. HERO SECTION
+         ====================================================================== -->
+    <section id="hero" class="hero section--border-bottom" aria-labelledby="hero-title">
+      <!-- Decorative Floating Studio Elements -->
+      <div class="floating-badge floating-badge--top reveal-item" aria-hidden="true">
+        <span class="floating-badge__coord">[35.7595° N, 5.8340° W]</span>
+        <span class="floating-badge__divider">•</span>
+        <span class="floating-badge__city">TANGIER, MOROCCO</span>
+      </div>
+      <div class="floating-badge floating-badge--bottom reveal-item" aria-hidden="true">
+        <span class="floating-badge__dot"></span>
+        <span>HTML5 • CSS3 • JAVASCRIPT</span>
+      </div>
+
+      <div class="container">
+        <div class="hero__inner">
+          
+          <!-- Availability Badge -->
+          <div class="status-badge reveal-item">
+            <span class="status-badge__dot" aria-hidden="true"></span>
+            <span>Available for independent web projects</span>
+          </div>
+
+          <!-- Animated Main Headline -->
+          <h1 id="hero-title" class="hero__title animated-headline" aria-label="Independent Web Developer crafting modern digital experiences.">
+            <!-- Words are split and animated progressively -->
+            <span class="headline-word" data-word="Independent">Independent</span>
+            <span class="headline-word" data-word="Web">Web</span>
+            <span class="headline-word" data-word="Developer">Developer</span>
+            <span class="headline-break"></span>
+            <span class="headline-word text-muted" data-word="crafting">crafting</span>
+            <span class="headline-word text-muted" data-word="modern">modern</span>
+            <span class="headline-word" data-word="digital">digital</span>
+            <span class="headline-word text-highlight" data-word="experiences.">experiences.</span>
+          </h1>
+
+          <!-- Studio Subtitle / Brand identity -->
+          <div class="hero__sub-identity reveal-item">
+            <span class="hero__brand-pill">SHADOW GARDEN</span>
+            <span class="hero__sub-divider">—</span>
+            <span class="hero__sub-name">Ayoub Zouggar</span>
+            <span class="hero__sub-divider">—</span>
+            <span class="hero__sub-loc">Tangier, Morocco</span>
+          </div>
+
+          <!-- Bio statement -->
+          <p class="hero__description reveal-item">
+            Crafting bespoke, high-performance websites with typographic discipline and pure web standards. 
+            Focused on clean semantic HTML5, modern CSS3 architectures, and resilient Vanilla JavaScript 
+            to deliver elegant, enduring, and responsive digital products.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero__actions reveal-item">
+            <a href="#projects" class="btn btn--primary">
+              Selected Work ↓
+            </a>
+            <a href="https://wa.me/212714413740?text=Hello%20Ayoub,%20I%20am%20interested%20in%20discussing%20a%20website%20project." target="_blank" rel="noopener noreferrer" class="btn btn--secondary" aria-label="Chat directly on WhatsApp with Ayoub Zouggar (opens in a new tab)">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              Chat on WhatsApp ↗
+            </a>
+            <button type="button" class="btn btn--ghost" data-copy="+212714413740" data-label="WhatsApp number" title="Copy WhatsApp number to clipboard" aria-label="Copy WhatsApp number to clipboard">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              Copy +212 714-413740
+            </button>
+          </div>
+
+          <!-- Hero Metrics Ribbon -->
+          <div class="hero__metrics reveal-item" role="region" aria-label="Studio highlights">
+            <div class="metric-item">
+              <span class="metric-item__value">HTML / CSS / JS</span>
+              <span class="metric-item__label">Core Standards Stack</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-item__value">100</span>
+              <span class="metric-item__label">Performance Target</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-item__value">0kb</span>
+              <span class="metric-item__label">Runtime Bloat</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-item__value">TANGIER</span>
+              <span class="metric-item__label">Morocco / Remote</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. ABOUT ME SECTION
+         ====================================================================== -->
+    <section id="about" class="section section--border-bottom" aria-labelledby="about-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">01 / Foundation</span>
+          <h2 id="about-title" class="section-title">Form follows performance.</h2>
+          <p class="section-subtitle">Bridging systematic interface design with production web standards.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Visual Profile Card -->
+          <div class="about__visual-card reveal-item">
+            <div class="about__avatar-wrap">
+              <img src="assets/images/avatar.svg" alt="Monogram silhouette representing Ayoub Zouggar — SHADOW GARDEN" width="96" height="96" loading="lazy">
+            </div>
+            <div class="about__profile-header">
+              <h3>Ayoub Zouggar</h3>
+              <p>Independent Web Developer</p>
+            </div>
+            <div class="about__meta-list">
+              <div class="about__meta-item">
+                <span class="about__meta-label">Brand</span>
+                <span class="about__meta-value">SHADOW GARDEN</span>
+              </div>
+              <div class="about__meta-item">
+                <span class="about__meta-label">Location</span>
+                <span class="about__meta-value">Tangier, Morocco</span>
+              </div>
+              <div class="about__meta-item">
+                <span class="about__meta-label">Focus</span>
+                <span class="about__meta-value">Modern Web Development</span>
+              </div>
+              <div class="about__meta-item">
+                <span class="about__meta-label">Stack</span>
+                <span class="about__meta-value">HTML5 / CSS3 / ES6+</span>
+              </div>
+              <div class="about__meta-item">
+                <span class="about__meta-label">WhatsApp</span>
+                <a href="https://wa.me/212714413740" target="_blank" rel="noopener noreferrer" class="about__meta-value about__meta-link">+212 714-413740</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial Narrative -->
+          <div class="about__content reveal-item">
+            <p class="about__statement">
+              Modern digital products too frequently drown in layered abstraction and fragile dependencies. 
+              My discipline centers on mastering the foundational platform: semantic HTML, 
+              mathematically sound CSS architectures, and clean, resilient Vanilla JavaScript.
+            </p>
+            <p>
+              Under the creative identity of <strong>SHADOW GARDEN</strong>, I operate as an independent web developer 
+              based in Tangier, Morocco. I work with clients, creative founders, and independent businesses 
+              to engineer bespoke web presences where high visual fidelity and extreme runtime efficiency coexist. 
+              Every interaction is engineered with intention, accessible keyboard navigation, and fluid responsiveness across every device viewport.
+            </p>
+
+            <!-- Architectural Principles -->
+            <div class="about__principles" role="region" aria-label="Core Engineering Principles">
+              <div class="principle-card">
+                <span class="principle-card__num">01 // STANDARDS</span>
+                <h4 class="principle-card__title">Pure Web Platform</h4>
+                <p class="principle-card__text">Standard web platforms eliminate dependency churn, prevent security vulnerabilities, and ensure web platforms remain operable decades into the future.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-card__num">02 // AESTHETIC</span>
+                <h4 class="principle-card__title">Dark Monochrome Restraint</h4>
+                <p class="principle-card__text">A timeless black and white visual hierarchy with refined contrast, intentional typography scales, and fluid layout math.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-card__num">03 // INCLUSION</span>
+                <h4 class="principle-card__title">Universal Accessibility</h4>
+                <p class="principle-card__text">Semantic landmarks, strict contrast ratios, ARIA compliance, full keyboard-first traversal, and respect for reduced motion.</p>
+              </div>
+              <div class="principle-card">
+                <span class="principle-card__num">04 // VELOCITY</span>
+                <h4 class="principle-card__title">Speed as a Feature</h4>
+                <p class="principle-card__text">Instantaneous paint cycles, optimized assets, zero runtime clutter, and flawless performance on mobile and desktop.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. SKILLS & TECHNOLOGIES SECTION
+         ====================================================================== -->
+    <section id="skills" class="section section--border-bottom" aria-labelledby="skills-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">02 / Competence</span>
+          <h2 id="skills-title" class="section-title">Built on web standards.</h2>
+          <p class="section-subtitle">Deep expertise across modern browsers, layout paradigms, and native APIs.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Core Engineering -->
+          <article class="skill-category reveal-item">
+            <header class="skill-category__header">
+              <span class="skill-category__code">01 // CORE</span>
+              <h3 class="skill-category__title">Core Engineering</h3>
+            </header>
+            <ul class="skill-category__list" aria-label="Core Engineering Skills">
+              <li class="skill-pill">HTML5 Semantic Elements</li>
+              <li class="skill-pill">Modern CSS3 Architecture</li>
+              <li class="skill-pill">Vanilla JavaScript (ES6+)</li>
+              <li class="skill-pill">Web APIs &amp; Native DOM</li>
+              <li class="skill-pill">CSS Custom Properties</li>
+              <li class="skill-pill">CSS Grid &amp; Flexbox</li>
+              <li class="skill-pill">Fluid clamp() Typography</li>
+              <li class="skill-pill">Mobile-First Layouts</li>
+            </ul>
+          </article>
+
+          <!-- Category 2: UI/UX & Systems -->
+          <article class="skill-category reveal-item">
+            <header class="skill-category__header">
+              <span class="skill-category__code">02 // DESIGN</span>
+              <h3 class="skill-category__title">UI/UX &amp; Systems</h3>
+            </header>
+            <ul class="skill-category__list" aria-label="UI/UX and Design System Skills">
+              <li class="skill-pill">Design Token Architecture</li>
+              <li class="skill-pill">Component Engineering</li>
+              <li class="skill-pill">Micro-interactions</li>
+              <li class="skill-pill">Typographic Hierarchy</li>
+              <li class="skill-pill">Modern Web Layouts</li>
+              <li class="skill-pill">Monochrome Aesthetics</li>
+              <li class="skill-pill">Spatial Layout Systems</li>
+              <li class="skill-pill">Interactive Wireframing</li>
+            </ul>
+          </article>
+
+          <!-- Category 3: Performance & Quality -->
+          <article class="skill-category reveal-item">
+            <header class="skill-category__header">
+              <span class="skill-category__code">03 // QUALITY</span>
+              <h3 class="skill-category__title">Quality &amp; Standards</h3>
+            </header>
+            <ul class="skill-category__list" aria-label="Quality and Standards Skills">
+              <li class="skill-pill">WCAG Contrast Standards</li>
+              <li class="skill-pill">Keyboard Navigation First</li>
+              <li class="skill-pill">Screen Reader ARIA</li>
+              <li class="skill-pill">Core Web Vitals Tuning</li>
+              <li class="skill-pill">Performance Auditing</li>
+              <li class="skill-pill">Reduced Motion Support</li>
+              <li class="skill-pill">Cross-Browser Consistency</li>
+              <li class="skill-pill">Clean Modular Code</li>
+            </ul>
+          </article>
+
+          <!-- Category 4: Tooling & Delivery -->
+          <article class="skill-category reveal-item">
+            <header class="skill-category__header">
+              <span class="skill-category__code">04 // DELIVERY</span>
+              <h3 class="skill-category__title">Workflow &amp; Delivery</h3>
+            </header>
+            <ul class="skill-category__list" aria-label="Tooling and Delivery Skills">
+              <li class="skill-pill">Git &amp; Version Control</li>
+              <li class="skill-pill">Browser DevTools Profiling</li>
+              <li class="skill-pill">RESTful API Integration</li>
+              <li class="skill-pill">JSON-LD / Schema SEO</li>
+              <li class="skill-pill">Form Validation Logic</li>
+              <li class="skill-pill">SVG Vector Craft</li>
+              <li class="skill-pill">WhatsApp API Workflows</li>
+              <li class="skill-pill">Direct Client Delivery</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Skills Summary Banner -->
+        <div class="skill-summary reveal-item">
+          <p class="skill-summary__text">
+            <strong>Platform Philosophy:</strong> Standard web technologies eliminate dependency churn, prevent security vulnerabilities, and ensure web platforms remain operable decades into the future.
+          </p>
+          <a href="https://wa.me/212714413740?text=Hello%20Ayoub,%20I'd%20like%20to%20discuss%20a%20website%20project." target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--sm">
+            Discuss Technical Fit ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. SELECTED PROJECTS SECTION
+         ====================================================================== -->
+    <section id="projects" class="section section--border-bottom" aria-labelledby="projects-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">03 / Archive</span>
+          <h2 id="projects-title" class="section-title">Selected projects.</h2>
+          <p class="section-subtitle">Real production systems built with obsessive focus on craft, performance, and usability.</p>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- Project 1 -->
+          <article class="project-card reveal-item" data-project="pulse" aria-labelledby="project-1-title">
+            <div class="project-card__visual">
+              <div class="project-card__img-wrap">
+                <img src="assets/images/project-1.svg" alt="Pulse Analytics Engine interface telemetry dashboard preview" class="project-card__img" loading="lazy" width="800" height="500">
+                <div class="project-card__overlay" aria-hidden="true">
+                  <span class="project-card__peek-btn">View Details</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <div class="project-card__meta">
+                  <span>01 // TELEMETRY</span>
+                  <span>•</span>
+                  <span>PRODUCTION</span>
+                </div>
+                <h3 id="project-1-title" class="project-card__title">Pulse Analytics Engine</h3>
+                <p class="project-card__description">
+                  A high-throughput monitoring dashboard engineered to visualize real-time edge network telemetry. 
+                  Rendered with zero framework dependencies using hardware-accelerated canvas charts and vanilla event pipelines.
+                </p>
+                <div class="project-card__highlights">
+                  <span class="project-card__highlight-item">Sub-10ms UI update cycle for streaming time-series data</span>
+                  <span class="project-card__highlight-item">Fully responsive dashboard grid adapting to tablet and mobile viewports</span>
+                  <span class="project-card__highlight-item">Strict high-contrast monochrome color palette with accessibility cues</span>
+                </div>
+                <div class="project-card__tags">
+                  <span class="project-tag">HTML5 Canvas</span>
+                  <span class="project-tag">CSS Grid</span>
+                  <span class="project-tag">Vanilla ES6+</span>
+                  <span class="project-tag">Modern CSS3</span>
+                </div>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://wa.me/212714413740?text=Hello%20Ayoub,%20I'd%20like%20to%20inquire%20about%20a%20project%20like%20Pulse%20Analytics." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm" aria-label="Inquire via WhatsApp about Pulse Analytics Engine">
+                  Inquire on WhatsApp ↗
+                </a>
+                <button type="button" class="btn btn--secondary btn--sm project-details-btn" data-project-id="pulse">
+                  View Project Specs
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal-item" data-project="kuro" aria-labelledby="project-2-title">
+            <div class="project-card__visual">
+              <div class="project-card__img-wrap">
+                <img src="assets/images/project-2.svg" alt="Kuro Atelier minimalist luxury storefront interface preview" class="project-card__img" loading="lazy" width="800" height="500">
+                <div class="project-card__overlay" aria-hidden="true">
+                  <span class="project-card__peek-btn">View Details</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <div class="project-card__meta">
+                  <span>02 // COMMERCE</span>
+                  <span>•</span>
+                  <span>COMMERCIAL</span>
+                </div>
+                <h3 id="project-2-title" class="project-card__title">Kuro Atelier</h3>
+                <p class="project-card__description">
+                  A brutalist, minimalist e-commerce storefront for an independent industrial design studio. 
+                  Designed to highlight tactile textures through generous negative space and micro-interactions.
+                </p>
+                <div class="project-card__highlights">
+                  <span class="project-card__highlight-item">Perfect 100/100 Core Web Vitals score across all mobile devices</span>
+                  <span class="project-card__highlight-item">Zero layout shift (CLS: 0.00) during asynchronous product catalog hydrations</span>
+                  <span class="project-card__highlight-item">Accessible cart drawer with full keyboard focus-trapping</span>
+                </div>
+                <div class="project-card__tags">
+                  <span class="project-tag">Semantic HTML5</span>
+                  <span class="project-tag">Modern CSS3</span>
+                  <span class="project-tag">Vanilla ES6+</span>
+                  <span class="project-tag">Responsive Design</span>
+                </div>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://wa.me/212714413740?text=Hello%20Ayoub,%20I'd%20like%20to%20inquire%20about%20a%20project%20like%20Kuro%20Atelier." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm" aria-label="Inquire via WhatsApp about Kuro Atelier">
+                  Inquire on WhatsApp ↗
+                </a>
+                <button type="button" class="btn btn--secondary btn--sm project-details-btn" data-project-id="kuro">
+                  View Project Specs
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal-item" data-project="verve" aria-labelledby="project-3-title">
+            <div class="project-card__visual">
+              <div class="project-card__img-wrap">
+                <img src="assets/images/project-3.svg" alt="Verve Studio Engine editorial publishing layout preview" class="project-card__img" loading="lazy" width="800" height="500">
+                <div class="project-card__overlay" aria-hidden="true">
+                  <span class="project-card__peek-btn">View Details</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <div class="project-card__meta">
+                  <span>03 // EDITORIAL</span>
+                  <span>•</span>
+                  <span>CREATIVE LAB</span>
+                </div>
+                <h3 id="project-3-title" class="project-card__title">Verve Studio Engine</h3>
+                <p class="project-card__description">
+                  A modular editorial publishing system engineered for creative studios. 
+                  Leverages CSS clamp() mathematical typography systems and native intersection observers for graceful pacing.
+                </p>
+                <div class="project-card__highlights">
+                  <span class="project-card__highlight-item">Zero external CSS dependencies or JavaScript animation libraries</span>
+                  <span class="project-card__highlight-item">Accessible prefers-reduced-motion media query adaptations</span>
+                  <span class="project-card__highlight-item">Complete keyboard navigation support with visible high-contrast outlines</span>
+                </div>
+                <div class="project-card__tags">
+                  <span class="project-tag">Modular CSS</span>
+                  <span class="project-tag">Fluid Typography</span>
+                  <span class="project-tag">IntersectionObserver</span>
+                  <span class="project-tag">Responsive Design</span>
+                </div>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://wa.me/212714413740?text=Hello%20Ayoub,%20I'd%20like%20to%20inquire%20about%20a%20project%20like%20Verve%20Studio." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm" aria-label="Inquire via WhatsApp about Verve Studio Engine">
+                  Inquire on WhatsApp ↗
+                </a>
+                <button type="button" class="btn btn--secondary btn--sm project-details-btn" data-project-id="verve">
+                  View Project Specs
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal-item" data-project="synthetix" aria-labelledby="project-4-title">
+            <div class="project-card__visual">
+              <div class="project-card__img-wrap">
+                <img src="assets/images/project-4.svg" alt="Synthetix Design Tokens compiler and component workbench preview" class="project-card__img" loading="lazy" width="800" height="500">
+                <div class="project-card__overlay" aria-hidden="true">
+                  <span class="project-card__peek-btn">View Details</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card__content">
+              <div class="project-card__header">
+                <div class="project-card__meta">
+                  <span>04 // TOOLING</span>
+                  <span>•</span>
+                  <span>UTILITY WORKBENCH</span>
+                </div>
+                <h3 id="project-4-title" class="project-card__title">Synthetix Design Tokens</h3>
+                <p class="project-card__description">
+                  An in-browser design token compiler and component workbench. Enables engineering teams 
+                  to configure, inspect, and export tokenized palettes, typographic scales, and CSS variables.
+                </p>
+                <div class="project-card__highlights">
+                  <span class="project-card__highlight-item">Live syntax-highlighted token JSON parsing without external parser packages</span>
+                  <span class="project-card__highlight-item">Exportable CSS custom properties compatible with any build system</span>
+                  <span class="project-card__highlight-item">Interactive contrast calculator verifying WCAG compliance in real-time</span>
+                </div>
+                <div class="project-card__tags">
+                  <span class="project-tag">Vanilla JS</span>
+                  <span class="project-tag">CSS Custom Properties</span>
+                  <span class="project-tag">LocalStorage API</span>
+                  <span class="project-tag">Color Math</span>
+                </div>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://wa.me/212714413740?text=Hello%20Ayoub,%20I'd%20like%20to%20inquire%20about%20a%20project%20like%20Synthetix%20Design%20Tokens." target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm" aria-label="Inquire via WhatsApp about Synthetix Design Tokens">
+                  Inquire on WhatsApp ↗
+                </a>
+                <button type="button" class="btn btn--secondary btn--sm project-details-btn" data-project-id="synthetix">
+                  View Project Specs
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. SERVICES SECTION
+         ====================================================================== -->
+    <section id="services" class="section section--border-bottom" aria-labelledby="services-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">04 / Scope</span>
+          <h2 id="services-title" class="section-title">How we can collaborate.</h2>
+          <p class="section-subtitle">Specialized web development services tailored for teams and clients who value quality, elegance, and speed.</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Service 1 -->
+          <article class="service-card reveal-item">
+            <div class="service-card__top">
+              <span class="service-card__index">01 // ARCHITECTURE</span>
+              <h3 class="service-card__title">Custom Website Development</h3>
+              <p class="service-card__desc">
+                Building bespoke, resilient websites using fundamental web standards. 
+                Focused on minimal dependency overhead, instantaneous rendering, and clean maintainable codebases.
+              </p>
+            </div>
+            <div class="service-card__deliverables">
+              <span class="service-card__deliverable-title">Deliverables</span>
+              <div class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Semantic HTML5 responsive layouts</span>
+              </div>
+              <div class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Clean Vanilla JavaScript interactions</span>
+              </div>
+              <div class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Cross-browser mobile and desktop builds</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card reveal-item">
+            <div class="service-card__top">
+              <span class="service-card__index">02 // DESIGN SYSTEMS</span>
+              <h3 class="service-card__title">Minimalist UI &amp; Interface Design</h3>
+              <p class="service-card__desc">
+                Establishing systematic CSS custom properties, accessible UI components, and 
+                dark monochrome aesthetics that provide a refined studio atmosphere.
+              </p>
+            </div>
+            <div class="service-card__deliverables">
+              <span class="service-card__deliverable-title">Deliverables</span>
+              <div class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Black &amp; white typography systems</span>
+              </div>
+              <div class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Modular CSS variable architecture</span>
+              </div>
+              <div class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Subtle micro-interactions &amp; animations</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card reveal-item">
+            <div class="service-card__top">
+              <span class="service-card__index">03 // MODERNIZATION</span>
+              <h3 class="service-card__title">Website Redesign &amp; Polish</h3>
+              <p class="service-card__desc">
+                Transforming outdated web pages into sleek, modern, fast-loading digital experiences. 
+                Emphasis on clean spacing, clear visual hierarchy, and tactile interactivity.
+              </p>
+            </div>
+            <div class="service-card__deliverables">
+              <span class="service-card__deliverable-title">Deliverables</span>
+              <div class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Fluid mobile-first responsive redesigns</span>
+              </div>
+              <div class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Modern CSS Grid &amp; Flexbox refactoring</span>
+              </div>
+              <div class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Seamless navigation &amp; interactive drawers</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Service 4 -->
+          <article class="service-card reveal-item">
+            <div class="service-card__top">
+              <span class="service-card__index">04 // OPTIMIZATION</span>
+              <h3 class="service-card__title">Performance &amp; Code Health</h3>
+              <p class="service-card__desc">
+                Auditing existing websites to eliminate bottlenecks, remediate accessibility 
+                friction, and optimize load speed to achieve top-tier performance scores.
+              </p>
+            </div>
+            <div class="service-card__deliverables">
+              <span class="service-card__deliverable-title">Deliverables</span>
+              <div class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Speed tuning &amp; Core Web Vitals checks</span>
+              </div>
+              <div class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>High-contrast accessibility remediations</span>
+              </div>
+              <div class="service-card__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Removal of bloated dependencies &amp; scripts</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. CONTACT SECTION
+         ====================================================================== -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-eyebrow">05 / Contact</span>
+          <h2 id="contact-title" class="section-title">Let’s build something durable.</h2>
+          <p class="section-subtitle">Currently considering freelance projects, website builds, and independent developer contracts.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Direct Channels -->
+          <div class="contact-info reveal-item">
+            <div class="contact-info__intro">
+              <p>
+                Have an upcoming web project, design challenge, or want to discuss a custom website? 
+                Reach out directly on WhatsApp or submit a project brief below.
+              </p>
+            </div>
+
+            <div class="contact-channels">
+              <!-- WhatsApp International Card -->
+              <div class="channel-card">
+                <div class="channel-card__main">
+                  <div class="channel-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                  </div>
+                  <div class="channel-card__meta">
+                    <span class="channel-card__label">WhatsApp (International)</span>
+                    <a href="https://wa.me/212714413740" target="_blank" rel="noopener noreferrer" class="channel-card__value" aria-label="Contact via WhatsApp at +212714413740 (opens in a new tab)">+212 714-413740</a>
+                  </div>
+                </div>
+                <button type="button" class="copy-btn" data-copy="+212714413740" data-label="International WhatsApp number" title="Copy international number" aria-label="Copy WhatsApp number to clipboard">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span class="sr-only">Copy WhatsApp number</span>
+                </button>
+              </div>
+
+              <!-- WhatsApp Local Card -->
+              <div class="channel-card">
+                <div class="channel-card__main">
+                  <div class="channel-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div class="channel-card__meta">
+                    <span class="channel-card__label">Direct Number (Morocco)</span>
+                    <a href="tel:0714413740" class="channel-card__value" aria-label="Call 0714413740">0714413740</a>
+                  </div>
+                </div>
+                <button type="button" class="copy-btn" data-copy="0714413740" data-label="Local number" title="Copy local phone number" aria-label="Copy local phone number to clipboard">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span class="sr-only">Copy local phone number</span>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="channel-card">
+                <div class="channel-card__main">
+                  <div class="channel-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div class="channel-card__meta">
+                    <span class="channel-card__label">Location</span>
+                    <span class="channel-card__value">Tangier, Morocco (Available Worldwide)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Response Protocol -->
+              <div class="channel-card">
+                <div class="channel-card__main">
+                  <div class="channel-card__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </div>
+                  <div class="channel-card__meta">
+                    <span class="channel-card__label">Response Protocol</span>
+                    <span class="channel-card__value">Direct reply via WhatsApp within 24 hours</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form with WhatsApp Integration -->
+          <div class="contact-form-wrapper reveal-item">
+            <form id="contact-form" class="contact-form" novalidate aria-label="Project inquiry form">
+              
+              <!-- Name & Contact Row -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Your name or organization" required aria-required="true" aria-describedby="name-feedback" autocomplete="name">
+                  <span id="name-feedback" class="form-feedback" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-field" class="form-label">Phone or WhatsApp</label>
+                  <input type="text" id="contact-field" name="contact-field" class="form-input" placeholder="+212... or 07..." autocomplete="tel">
+                  <span id="contact-field-feedback" class="form-feedback" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Project Type Selection -->
+              <div class="form-group">
+                <label for="service-type" class="form-label">Project Scope</label>
+                <select id="service-type" name="service-type" class="form-select">
+                  <option value="custom-website">Custom Website Development</option>
+                  <option value="ui-design">Minimalist UI &amp; Interface Design</option>
+                  <option value="redesign">Website Modernization &amp; Redesign</option>
+                  <option value="optimization">Performance &amp; Responsive Polish</option>
+                  <option value="other">General Inquiry / Consultation</option>
+                </select>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="message" class="form-label">Project Brief <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Describe your website goals, design ideas, or specific requirements..." required aria-required="true" aria-describedby="message-feedback"></textarea>
+                <span id="message-feedback" class="form-feedback" aria-live="polite"></span>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="form-actions">
+                <button type="button" id="whatsapp-submit-btn" class="btn btn--primary" style="width: 100%;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  </svg>
+                  Send Directly on WhatsApp ↗
+                </button>
+                <button type="submit" class="btn btn--secondary" style="width: 100%; margin-top: 0.5rem;">
+                  Submit Brief on Site
+                </button>
+              </div>
+
+              <!-- Accessible Form Status Alert -->
+              <div id="form-status" class="form-status" aria-live="assertive"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       8. FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        
+        <!-- Brand Summary -->
+        <div class="footer-brand">
+          <a href="#hero" class="brand" aria-label="Back to top">
+            <span class="brand__mark" aria-hidden="true">SG</span>
+            <span class="brand__name">SHADOW GARDEN</span>
+          </a>
+          <p>
+            Independent web development practice by <strong>Ayoub Zouggar</strong>. 
+            Crafting durable, accessible, and high-performance digital experiences with core web standards in Tangier, Morocco.
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-column">
+          <span class="footer-column__title">Index</span>
+          <ul class="footer-links">
+            <li><a href="#about" class="footer-link">About Foundation</a></li>
+            <li><a href="#skills" class="footer-link">Technical Skills</a></li>
+            <li><a href="#projects" class="footer-link">Selected Work</a></li>
+            <li><a href="#services" class="footer-link">Services &amp; Scope</a></li>
+            <li><a href="#contact" class="footer-link">Contact &amp; WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Channels -->
+        <div class="footer-column">
+          <span class="footer-column__title">Direct Channels</span>
+          <ul class="footer-links">
+            <li>
+              <a href="https://wa.me/212714413740" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="WhatsApp +212714413740 (opens in a new tab)">
+                WhatsApp: +212 714-413740 ↗
+                <span class="sr-only">(opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:0714413740" class="footer-link" aria-label="Call 0714413740">
+                Direct Line: 0714413740 ↗
+              </a>
+            </li>
+            <li>
+              <span class="footer-link footer-link--static">
+                Location: Tangier, Morocco
+              </span>
+            </li>
+            <li>
+              <a href="#contact" class="footer-link">
+                Submit Project Brief ↓
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="current-year">2026</span> SHADOW GARDEN — Ayoub Zouggar. Tangier, Morocco.
+        </p>
+
+        <a href="#hero" id="back-to-top" class="footer-back-to-top" aria-label="Scroll back to top of page">
+          Back to top ↑
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       PROJECT SPECS MODAL DIALOG
+       ======================================================================== -->
+  <dialog id="project-modal" class="project-modal" aria-labelledby="modal-title" aria-modal="true">
+    <div class="project-modal__backdrop" id="modal-backdrop"></div>
+    <div class="project-modal__box">
+      <div class="project-modal__header">
+        <div>
+          <span id="modal-category" class="project-modal__category">CATEGORY</span>
+          <h3 id="modal-title" class="project-modal__title">Project Title</h3>
+        </div>
+        <button type="button" class="project-modal__close-btn" id="modal-close-btn" aria-label="Close project details">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="project-modal__body">
+        <div class="project-modal__img-wrap">
+          <img id="modal-image" src="assets/images/project-1.svg" alt="Project preview" class="project-modal__img" width="700" height="400">
+        </div>
+        <p id="modal-description" class="project-modal__desc"></p>
+        <div class="project-modal__details-block">
+          <h4 class="project-modal__section-heading">Key Architectural Achievements</h4>
+          <ul id="modal-highlights" class="project-modal__list"></ul>
+        </div>
+        <div class="project-modal__details-block">
+          <h4 class="project-modal__section-heading">Technology Stack</h4>
+          <div id="modal-tags" class="project-card__tags"></div>
+        </div>
+      </div>
+      <div class="project-modal__footer">
+        <a id="modal-wa-link" href="https://wa.me/212714413740" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          Discuss Similar Project on WhatsApp ↗
+        </a>
+        <button type="button" class="btn btn--secondary" id="modal-dismiss-btn">Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification Container for Clipboard Copies -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
